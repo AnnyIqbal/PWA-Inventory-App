@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>InventoryApp</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/hammerjs/2.0.8/hammer.min.js"></script> 
+  <link href="/manifest.json" rel="manifest">
+</head>
+<body>
+  <app-root>Loading...</app-root>
+</body>
+<script>
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/service-worker.js')
+             .then(function() { console.log('Service Worker Registered'); });
+  }
+</script>
+</html>

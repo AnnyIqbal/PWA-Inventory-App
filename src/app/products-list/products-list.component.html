@@ -1,0 +1,8 @@
+<div>
+  <app-product-row 
+    *ngFor="let myProduct of productList" 
+    [product]="myProduct" 
+    (wishedProduct)="productWasSelected($event)"
+    [inStore]="store">
+  </app-product-row>
+</div> 

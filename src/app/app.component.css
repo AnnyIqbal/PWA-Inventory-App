@@ -1,0 +1,23 @@
+div {
+    width: 100%;
+    display: inline-flex;
+    text-align: center;
+}
+h1 {
+    width: 70%;
+    margin-left: 20%;
+    color: blue;
+}
+nav {
+    width: 30%;
+}
+#store :active {
+    color: red;
+    background-color: white;
+    background: 1px solid red;
+}
+#wishlist :active {
+    color: green;
+    background-color: white;
+    background: 1px solid green;
+}

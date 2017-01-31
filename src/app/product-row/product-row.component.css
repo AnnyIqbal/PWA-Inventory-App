@@ -1,0 +1,18 @@
+.header {
+    font-weight: bold;
+    font-size: 24px;
+}
+.row {
+    width: 600px;
+    margin: 5px auto;
+}
+div {
+    text-align: center;
+}
+input {
+    height: 50px;
+    width: 50px;
+}
+#price {
+    font-weight: bold;
+}

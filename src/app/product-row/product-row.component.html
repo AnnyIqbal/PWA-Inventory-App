@@ -1,0 +1,32 @@
+ <div>
+
+  <div class="col-sm-3">
+      <br>
+    <app-product-image [product]="product"></app-product-image>
+      <br>
+    <span id="price"> ${{ product.price }} </span>
+  </div>
+  
+  <div class="col-sm-6">
+    <div class="header" 
+      [ngStyle]="{color:'white', 'background-color':'blue'}" 
+      [style.border]="'3px solid pink'" 
+      [style.font-size.px]="fsize">
+          {{ product.name }}
+    </div>
+  <br>
+    <div class="product-sku">SKU #{{ product.sku }}</div>
+  <br>
+    <div class="description">
+      <app-product-department [product]="product"></app-product-department>
+    </div>
+  </div>
+
+  <div class="col-sm-3" *ngIf="inStore">
+  <br><br>
+    <input type="image" src="assets/Images/shoppingcart.jpg" (click)="add2cart(this.product)" />
+  </div>
+
+</div>
+<br>
+
